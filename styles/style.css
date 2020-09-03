@@ -16,7 +16,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-content: baseline;
+  align-items: baseline;
 }
 nav a {
   text-decoration: none;
@@ -84,6 +84,24 @@ nav #apps:hover::before {
   border: 2px solid #fff;
   border-radius: 50%;
   opacity: 1;
+}
+#user:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+#user::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-top: 2px solid #E92D18;
+  border-right: 2px solid #3174F1;
+  border-bottom: 2px solid #249A41;
+  border-left: 2px solid #F6AD01;
+  top: -4px;
+  left: -4px;
 }
 
 @media screen and (min-width: 381px) {
