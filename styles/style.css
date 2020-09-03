@@ -1,0 +1,102 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: arial,sans-serif;
+  font-size: 13px;
+}
+
+/* HEADER */
+header {
+  padding: 1.5rem;
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  opacity: .75;
+  margin-right: 12px;
+}
+nav a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+nav a:last-of-type {
+  margin-right: 0;
+}
+.nav-bar__left, .nav-bar__right {
+  display: inline-block;
+}
+@media screen and (min-width: 381px) {
+  header {
+    display: block;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem;
+  bottom: 0;
+}
+footer a {
+  font-size: 14px;
+  color: #5f6368;
+  margin-right: 12px;
+  text-decoration: none;
+}
+footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+footer a:last-of-type {
+  margin-right: 0;
+}
+.footer__left, .footer__right {
+  display: inline-block;
+}
+.footer__left {
+  order: 2;
+}
+.footer__right {
+  order: 1;
+}
+@media screen and (min-width: 700px) {
+  footer {
+    flex-direction: row;
+    align-items: unset;
+    justify-content: space-between;
+  }
+  .footer__left {
+    order: 1;
+  }
+  .footer__right {
+    order: 2;
+  }
+}
+
+/* MAIN */
+main {
+  text-align: center;
+}
+#google-logo {
+  max-width: 272px;
+  height: auto;
+  padding-top: 109px;
+  margin-top: 63px;
+}
+@media screen and (min-width: 381px) {
+  #google-logo { 
+    margin-top: 0;
+  }
+}
