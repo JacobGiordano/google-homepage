@@ -1,0 +1,1 @@
+This is a little intro project within the Web 101 course of The Odin Project where students are to replicate the Google Homepage in order to get comfortable with some foundational concepts and skills.
