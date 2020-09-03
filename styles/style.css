@@ -10,12 +10,13 @@ body {
 
 /* HEADER */
 header {
-  padding: 1.5rem;
+  padding: 12px 24px 18px;
   display: none;
 }
 nav {
   display: flex;
   justify-content: space-between;
+  align-content: baseline;
 }
 nav a {
   text-decoration: none;
@@ -36,6 +37,55 @@ nav a:last-of-type {
 .nav-bar__right a {
   color: #000;
 }
+nav #apps {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  top: -8px;
+}
+nav #apps::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(0,0,0,0.75);
+  box-shadow: -6px 0px 0px 0px rgba(0,0,0,0.75),
+  6px 0px 0px 0px rgba(0,0,0,0.75),
+  -6px 6px 0px 0px rgba(0,0,0,0.75),
+  0px 6px 0px 0px rgba(0,0,0,0.75),
+  6px 6px 0px 0px rgba(0,0,0,0.75),
+  -6px 12px 0px 0px rgba(0,0,0,0.75),
+  0px 12px 0px 0px rgba(0,0,0,0.75),
+  6px 12px 0px 0px rgba(0,0,0,0.75);
+}
+nav #apps:hover::before {
+  background-color: rgba(0,0,0,1);
+  box-shadow: -6px 0px 0px 0px rgba(0,0,0,1),
+  6px 0px 0px 0px rgba(0,0,0,1),
+  -6px 6px 0px 0px rgba(0,0,0,1),
+  0px 6px 0px 0px rgba(0,0,0,1),
+  6px 6px 0px 0px rgba(0,0,0,1),
+  -6px 12px 0px 0px rgba(0,0,0,1),
+  0px 12px 0px 0px rgba(0,0,0,1),
+  6px 12px 0px 0px rgba(0,0,0,1);
+}
+#user {
+  display: inline-block;
+  position: relative;
+  background-color: #ec4079;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2.1;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 1;
+}
+
 @media screen and (min-width: 381px) {
   header {
     display: block;
@@ -49,7 +99,7 @@ footer {
   position: absolute;
   flex-direction: column;
   width: 100%;
-  padding: 1.5rem;
+  padding: 18px;
   bottom: 0;  background: #f2f2f2;
   border-top: 1px solid #e4e4e4;
 }
