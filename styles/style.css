@@ -89,19 +89,12 @@ nav #apps:hover::before {
   text-decoration: none;
   cursor: pointer;
 }
-#user::after {
-  content: "";
+#user-border-svg {
   display: inline-block;
   position: absolute;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border-top: 2px solid #E92D18;
-  border-right: 2px solid #3174F1;
-  border-bottom: 2px solid #249A41;
-  border-left: 2px solid #F6AD01;
-  top: -4px;
-  left: -4px;
+  right: 22px;
+  top: 10px;
+  opacity: 1.0;
 }
 
 @media screen and (min-width: 381px) {
@@ -167,7 +160,7 @@ main {
 #google-logo {
   max-width: 272px;
   height: auto;
-  padding-top: 93px;
+  padding-top: 84px;
   margin-top: 63px;
 }
 @media screen and (min-width: 381px) {
